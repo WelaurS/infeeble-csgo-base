@@ -1,0 +1,22 @@
+{
+  "name": "infeeble-csgo",
+  "version": "0.0.1",
+  "description": "http://www.unknowncheats.me/forum/counterstrike-global-offensive/186350-node-js-hack-glow-skinchanger-radar-basic-web-gui.html",
+  "main": "app.js",
+  "dependencies": {
+    "asynckeystate": "^0.0.2",
+    "memoryjs": "^3.2.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "electron": "^4.0.6",
+    "electron-rebuild": "^1.8.4"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "start-gui": "electron ."
+  },
+  "author": "",
+  "license": "ISC"
+}
