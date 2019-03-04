@@ -35,6 +35,8 @@ let init = async () => {
     Core.start();
 
     console.log('Infeeble initiation completed');
+
+    // memoryjs.
 };
 
 // if running under the Electron we will render GUI

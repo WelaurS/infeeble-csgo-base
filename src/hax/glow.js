@@ -10,6 +10,13 @@ GlowClass.start = () => {
     let localPlayer = new Player(dwLocalPlayer);
     let localPlayerTeam = localPlayer.m_iTeamNum;
 
+    // update vars to prevent team bug
+    setInterval(() => {
+        dwLocalPlayer = State.localPlayer;
+        localPlayer = new Player(dwLocalPlayer);
+        localPlayerTeam = localPlayer.m_iTeamNum;
+    }, 300);
+
     let f = () => {
         for (let i = 1; i < 65; i++) {
             let dwEntity = memoryjs.readMemory(Core.process.handle, Core.client.modBaseAddr + Core.getOffset("dwEntityList") + (0x10 * i), memoryjs.DWORD);

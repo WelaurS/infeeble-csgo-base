@@ -6,7 +6,7 @@ const pointer = Core.client.modBaseAddr;
 
 class Control {
     static set dwForceJump(value) {
-        return memoryjs.writeMemory(Core.process.handle, pointer + Core.getOffset('dwForceJump'), value,memoryjs.INT);
+        return memoryjs.writeMemory(Core.process.handle, pointer + Core.getOffset('dwForceJump'), value, memoryjs.INT);
     }
 }
 
