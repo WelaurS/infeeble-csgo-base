@@ -1,11 +1,11 @@
+const memoryjs = require('memoryjs');
+
 let CoreModule = {
     process: null,
     client: null,
     engine: null,
     offsets: null,
 };
-
-let memoryjs = require('memoryjs');
 
 CoreModule.init = (process, client, engine, offsets) => {
     CoreModule.process = process;
@@ -15,13 +15,13 @@ CoreModule.init = (process, client, engine, offsets) => {
 };
 
 CoreModule.start = () => {
-    let bunnyhop = require('./bunnyhop');
+    let bunnyhop = require('./hax/bunnyhop');
     bunnyhop.start();
 
-    let glow = require('./glow');
+    let glow = require('./hax/glow');
     glow.start();
 
-    let rcs = require('./rcs');
+    let rcs = require('./hax/rcs');
     rcs.start();
 };
 
